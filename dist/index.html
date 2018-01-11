@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="gooddata_react_components_bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="gooddata_react_components_bundle.css">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="kpi"></div>
+    <script>
+      GDRC.ReactContentRenderer.render(
+      // Kpi component
+      GDRC.Kpi,
+      // props to be passed to Kpi component
+      {
+        projectId: 'kf0vsjlf9mll0osg6hmtppgm1nkjsi9r',
+        measure: 'aqyCuRZbheEx',
+        format: '#,##0'
+      },
+      // target DOM node
+      document.getElementById('kpi')
+      );
+    </script>
+  </body>
+</html>
+
